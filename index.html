@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raul Crespo</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+        }
+
+        body {
+            background-color: indigo;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(228, 228, 228);
+        }
+
+        header #topnav {
+            position: relative;
+            overflow: hidden;
+            background-color: #101010;
+        }
+
+        header #topnav-centered {
+            float: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        header #topnav-right {
+            float: right;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #101010;
+            color: rgb(228, 228, 228);
+            text-align: left;
+            text-indent: 8px;
+        }   
+
+        #texto {
+            margin: auto;
+            width: 60%;
+            padding: 11%;
+            text-align: center;
+            font-size: 48px;
+            color: rgb(228, 228, 228);
+        }
+
+        #refgit {
+            padding-top: 40px;
+        }
+
+        #linkgit {
+            font-weight: 300;
+            transition-duration: 0.4s;
+        }
+
+        #linkgit:hover {
+            padding: 8px 16px;
+            border-radius: 20px;
+            background-color: #101010;
+        }
+
+        .button {
+            background-color: #101010; /* Green */
+            border: none;
+            color: rgb(145, 87, 187);
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 48px;
+            font-weight: 1000;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .contactbtn:hover a {
+            color: rgb(145, 87, 187);
+        }
+
+        .logobtn {
+            font-size: 48px;
+        }
+    </style>
+</head>
+    <body>
+        <header>
+            <div id="topnav">
+                <button class="button logobtn""><a href="/index.html">&ltCrespo&frasl;&gt</a></button>
+
+                <div id="topnav-right">
+                    <button class="button contactbtn"><a href="/index.html">Início</a></button>
+                    <button class="button contactbtn"><a href="/contact.html">Contato</a></button>
+                </div>
+            </nav>
+        </header>
+
+        <div id="texto">
+            <h1>E aí! Beleza? 😉</h1>
+            <p>Me chamo Raul Crespo, atualmente</p>
+            <p>estou estudando desenvolvimento web com Java!</p>
+            <p id="refgit">Veja alguns projetos meus no <a href="https://github.com/crespo" target="_blank" id="linkgit">GitHub</a>! 😁</p>
+    <!--    Hello there! You can call me Raul or Crespo, that's up to you.
+            I love everything that makes me think different from what I'm usually used to.T
+            his includes topics from tech, bicycle or even politics.
+            Currently I'm studying Java Web Development and some other things!      -->
+           
+        </div>
+        <footer>© 2021 Raul Crespo</footer>
+    </body>
+</html>

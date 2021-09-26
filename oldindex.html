@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raul Crespo</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: indigo;
+        }
+
+        header #logo img {
+            width: 300px;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        header #topnav {
+            position: relative;
+            overflow: hidden;
+            background-color: #101010;
+        }
+
+        header #topnav-centered {
+            float: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        header #topnav-right {
+            float: right;
+        }
+
+        .button {
+            background-color: #101010; /* Green */
+            border: none;
+            color: indigo;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 24px;
+            font-weight: 1000;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .homebtn {
+            transition-duration: 0.4s;
+            border-radius: 5%;
+            border-style: groove;
+        }
+
+        .homebtn:hover {
+            background-color: rgb(51, 7, 85);
+            color: indigo;
+        }
+
+        .contactbtn {
+            transition-duration: 0.4s;
+            border-radius: 5%;
+            border-style: groove;
+        }
+
+        .contactbtn:hover {
+            background-color: rgb(51, 7, 85);
+            color: indigo;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="assets/images/logo.png">
+        </div>
+
+        <div id="topnav">
+            <div id="topnav-centered">
+                <button class="button homebtn""><a href="/index.html">Home</a></button>
+            </div>
+
+            <div id="topnav-right">
+                <button class="button contactbtn"><a href="/contact.html">Contact</a></button>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
