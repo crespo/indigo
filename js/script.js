@@ -1,9 +1,35 @@
-//var className = document.getElementById("container").className;
-//alert(className);
-
 function toggleMode() {
-   // element = document.getElementById("topnav_container");
-    
+
+    if (document.body.className.includes("contact")) {
+        if (document.getElementById("mailicon").src.includes("resources/images/mail-inbox-app-light.png")) {
+            document.getElementById("mailicon").src = "resources/images/mail-inbox-app.png";
+        } else {
+            document.getElementById("mailicon").src = "resources/images/mail-inbox-app-light.png";
+        }
+
+        if (document.getElementById("linkedinicon").src.includes("resources/images/linkedin-light.png")) {
+            document.getElementById("linkedinicon").src = "resources/images/linkedin.png";
+        } else {
+            document.getElementById("linkedinicon").src = "resources/images/linkedin-light.png";
+        }
+
+        if (document.getElementById("instagramicon").src.includes("resources/images/instagram-light.png")) {
+            document.getElementById("instagramicon").src = "resources/images/instagram.png";
+        } else {
+            document.getElementById("instagramicon").src = "resources/images/instagram-light.png";
+        }
+
+        if (document.getElementById("githubicon").src.includes("resources/images/github-light.png")) {
+            document.getElementById("githubicon").src = "resources/images/github.png";
+        } else {
+            document.getElementById("githubicon").src = "resources/images/github-light.png";
+        }
+    } else {
+        element = document.getElementById("gitlink_container");
+        element.classList.toggle("gitlink__dark-mode");
+    }
+
+
     var element = document.body;
     element.classList.toggle("body__dark-mode"); 
 
@@ -30,7 +56,4 @@ function toggleMode() {
 
     element = document.getElementById("container");
     element.classList.toggle("content__dark-mode");
-
-    element = document.getElementById("gitlink_container");
-    element.classList.toggle("gitlink__dark-mode");
 }
