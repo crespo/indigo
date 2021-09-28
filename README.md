@@ -1,9 +1,9 @@
 <br/>
-<h1 align="center">Snapshots (outdated)</h1>
+<h1 align="center">Snapshots ✨</h1>
 
-<p>Home page preview:</p>
+<p>Desktop previews:</p>
 
-![Home preview](/resources/snapshots/personalSite_home.png)
-<p>Contact page preview:</p>
+![Desktop preview](/resources/snapshots/personalSite_pc_ss.png)
+<p>Mobile previews:</p>
 
-![Contact preview](/resources/snapshots/personalSite_contact.png)
+![Mobile preview](/resources/snapshots/personalSite_mobile_ss.png)
