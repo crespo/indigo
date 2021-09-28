@@ -1,5 +1,5 @@
 <br/>
-<h1 align="center">Snapshots</h1>
+<h1 align="center">Snapshots (outdated)</h1>
 
 <p>Home page preview:</p>
 
