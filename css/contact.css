@@ -155,11 +155,11 @@ a {
 
     .button {
         font-size: 22px;
+        padding: 16px 3px;
     }
 
     .togglemode {
         font-size: 18px;
-        padding: 16px 3px;
     }
 
     .social {
