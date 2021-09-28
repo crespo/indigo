@@ -3,15 +3,23 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
+    transition-duration: 0.4s;
 }
 
 body {
     background-color: indigo;
 }
 
+.body__dark-mode {
+    background-color: white;
+}
+
 a {
     text-decoration: none;
-    color: rgb(228, 228, 228);
+}
+
+.a__dark-mode {
+    color: #101010;
 }
 
 .topnav {
@@ -19,6 +27,11 @@ a {
     overflow: hidden;
     background-color: #101010;
     box-shadow: 0px 1px 10px 10px #101010;
+}
+
+.topnav__dark-mode {
+    background-color: white;
+    box-shadow: 0px 1px 10px 10px white;
 }
 
 .topnav-centered {
@@ -33,26 +46,37 @@ a {
     float: right;
 }
 
-footer {
+.footer__light-mode {
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 3px;
     width: 100%;
     background-color: #101010;
-    color: rgb(228, 228, 228);
+    color: white;
     text-align: left;
     text-indent: 8px;
     box-shadow: 0px -1px 10px 10px #101010;
+}
+
+.footer__dark-mode {
+    background-color: white;
+    color: #101010;
+    box-shadow: 0px -1px 10px 10px white;
+    font-weight: 300;
 }
 
 .content {
     display: table;
     margin: auto;
     width: 60%;
-    padding: 14%;
+    padding: 11%;
     text-align: center;
     font-size: 48px;
-    color: rgb(228, 228, 228);
+    color: white;
+}
+
+.content__dark-mode {
+    color: #101010;
 }
 
 .horizontal-list {
@@ -64,28 +88,6 @@ footer {
     padding: 12px;
 }
 
-.button {
-    background-color: #101010;
-    border: none;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 48px;
-    font-weight: 1000;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.contactbtn:hover a {
-    color: rgb(145, 87, 187);
-}
-
-.logobtn {
-    font-size: 48px;
-}
-
 .social {
     height: 100px;
     width: auto;
@@ -94,4 +96,74 @@ footer {
 
 .social:hover {
     height: 115px;
+}
+
+.button {
+    background-color: #101010;
+    border: none;
+    color: rgb(145, 87, 187);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 48px;
+    font-weight: 1000;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.togglemode {
+    margin-top: 10px;
+    font-size: 48px;
+    font-weight: 300;
+    color: white;
+}
+
+.contactbtn {
+    color: white;
+    font-weight: 100;
+}
+
+.logobtn {
+    color: white;
+    font-size: 48px;
+    font-weight: 100;
+}
+
+.button__dark-mode {
+    color: #101010;
+    background-color: white;
+}
+
+.contactbtn:hover {
+    color: rgb(145, 87, 187);
+}
+
+.togglemode:hover {
+    color: rgb(145, 87, 187);
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        font-size: 24px;
+        padding: 11%
+    }
+
+    .footer__light-mode {
+        font-size: 12px;
+    }
+
+    .button {
+        font-size: 22px;
+    }
+
+    .togglemode {
+        font-size: 18px;
+        padding: 16px 32px;
+    }
+
+    .social {
+        margin-top: 10px;
+        height: 30px;
+    }
 }

@@ -9,23 +9,26 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/contact.css">
     </head>
     <body>
+        <script src="/js/script.js"></script>
+
         <header>
-            <div class="topnav">
-                <button class="button logobtn"><a href="/index.html">&ltCrespo&frasl;&gt</a></button>
+            <div id="topnav_container" class="topnav">
+                <a href="/index.html"><button id="button1" class="button logobtn">&ltCrespo&frasl;&gt</button></a>
 
                 <div class="topnav-right">
-                    <button class="button contactbtn"><a href="/index.html">Início</a></button>
-                    <button class="button contactbtn"><a target="_blank" href="/resources/archives/CV - RAUL CRESPO RODRIGUES RIBEIRO.pdf" title=""=>Currículo</a></button>
-                    <button class="button contactbtn"><a href="/contact.html">Contato</a></button>
+                    <a href="/index.html"><button id="button3" class="button contactbtn">Início</button></a>
+                    <a target="_blank" href="/resources/archives/CV - RAUL CRESPO RODRIGUES RIBEIRO.pdf" title=""=><button id="button4" class="button contactbtn">Currículo</button></a>
+                    <a href="/contact.html"><button id="button5" class="button contactbtn">Contato</button></a>
+                    <button id="button2" class="button togglemode" onclick="toggleMode()">Modo Escuro/Claro</button>
                 </div>
             </div>
         </header>
 
-        <div class="content">
+        <div id="container" class="content">
             <h1>Entre em contato comigo!</h1>
             <ul class="horizontal-list">
                 <li>
@@ -51,6 +54,6 @@
             </ul>  
         </div>
         
-        <footer>© 2021 Raul Crespo</footer>
+        <footer id="footer_container" class="footer__light-mode">© 2021 Raul Crespo</footer>
     </body>
 </html>
