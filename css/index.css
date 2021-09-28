@@ -160,4 +160,10 @@ a {
     .togglemode {
         font-size: 18px;
     }
+
+    .gitlink:hover {
+        font-size: 30px;
+        padding: 0px 4px;
+        border-radius: 20px;
+    }
 }
