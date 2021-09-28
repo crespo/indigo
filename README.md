@@ -3,7 +3,7 @@
 
 <p>Home page preview:</p>
 
-![Home preview](/assets/snapshots/personalSite_home.png)
+![Home preview](/resources/snapshots/personalSite_home.png)
 <p>Contact page preview:</p>
 
-![Contact preview](/assets/snapshots/personalSite_contact.png)
+![Contact preview](/resources/snapshots/personalSite_contact.png)
